@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Молодёжный ресурсный центр Кызылжарского района</title>
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0284c7',
+                        secondary: '#0d9488',
+                        accent: '#f59e0b',
+                        dark: '#0f172a'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+
+    <!-- Навигация -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-lg bg-primary flex items-center justify-center text-white font-bold text-xl shadow-md">
+                    МРЦ
+                </div>
+                <div>
+                    <span class="text-lg font-bold text-slate-900 block leading-tight">МРЦ Кызылжар</span>
+                    <span class="text-xs text-slate-500">Молодёжный ресурсный центр</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8 font-medium text-slate-600">
+                <a href="#about" class="hover:text-primary transition">О нас</a>
+                <a href="#directions" class="hover:text-primary transition">Направления</a>
+                <a href="#projects" class="hover:text-primary transition">Проекты</a>
+                <a href="#contacts" class="hover:text-primary transition">Контакты</a>
+            </nav>
+
+            <div class="flex items-center space-x-4">
+                <a href="https://instagram.com/mrc_kyzylzhar" target="_blank" rel="noopener noreferrer" 
+                   class="flex items-center space-x-2 bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 text-white px-4 py-2 rounded-full font-medium shadow-sm hover:opacity-95 transition">
+                    <i class="fab font-bold fa-instagram text-lg"></i>
+                    <span class="hidden sm:inline">@mrc_kyzylzhar</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Главный баннер (Hero Section) -->
+    <section class="relative bg-gradient-to-br from-slate-900 via-slate-800 to-primary text-white py-24 lg:py-32 overflow-hidden">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <span class="inline-block bg-primary/30 text-sky-200 border border-sky-400/30 px-4 py-1.5 rounded-full text-sm font-semibold mb-6">
+                    🇰🇿 Твоё время • Твои возможности
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight mb-6">
+                    Пространство для развития молодёжи Кызылжарского района
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-300 mb-8 leading-relaxed">
+                    Мы помогаем подрастающему поколению и молодёжи реализовывать свои идеи, находить призвание, участвовать в волонтёрских и социальных проектах.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contacts" class="bg-primary hover:bg-sky-600 text-white font-semibold px-6 py-3.5 rounded-xl shadow-lg hover:shadow-xl transition">
+                        Присоединиться к нам
+                    </a>
+                    <a href="https://instagram.com/mrc_kyzylzhar" target="_blank" rel="noopener noreferrer" 
+                       class="bg-white/10 hover:bg-white/20 text-white border border-white/20 font-semibold px-6 py-3.5 rounded-xl transition flex items-center space-x-2">
+                        <i class="fab fa-instagram"></i>
+                        <span>Наш Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- О нас / Обращение директора -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="text-primary font-bold uppercase tracking-wider text-sm">О нашем центре</span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-slate-900 mt-2 mb-6">
+                        Приветствуем вас в Молодёжном ресурсном центре!
+                    </h2>
+                    <p class="text-slate-600 mb-4 leading-relaxed">
+                        Молодёжный ресурсный центр Кызылжарского района — это открытая площадка для активной, амбициозной и неравнодушной молодёжи. Наша главная цель — всесторонняя поддержка молодых людей, развитие их потенциала и организация полезного досуга.
+                    </p>
+                    <p class="text-slate-600 mb-6 leading-relaxed">
+                        Мы организуем экологические акции, спортивные состязания, трудовые отряды «Жасыл ел», правовые консультации и помогаем с профориентацией школьникам и выпускникам.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4 pt-4 border-t border-slate-100">
+                        <div>
+                            <div class="text-3xl font-extrabold text-primary">100+</div>
+                            <div class="text-sm text-slate-500">Мероприятий в год</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-extrabold text-secondary">1000+</div>
+                            <div class="text-sm text-slate-500">Активной молодёжи</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="aspect-video bg-gradient-to-tr from-primary to-secondary rounded-2xl shadow-xl flex items-center justify-center text-white p-8 text-center">
+                        <div>
+                            <i class="fas font-bold fa-users text-6xl mb-4 opacity-80"></i>
+                            <h3 class="text-2xl font-bold">Вместе к новым вершинам!</h3>
+                            <p class="text-slate-100 text-sm mt-2">Кызылжарский район, Северо-Казахстанская область</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Основные направления -->
+    <section id="directions" class="py-20 bg-slate-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-16">
+                <span class="text-primary font-bold uppercase tracking-wider text-sm">Чем мы занимаемся</span>
+                <h2 class="text-3xl font-bold text-slate-900 mt-2">Ключевые направления работы</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Направление 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-slate-200/60">
+                    <div class="w-12 h-12 rounded-xl bg-sky-100 text-primary flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Волонтёрство и «Жасыл ел»</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Развитие волонтёрского движения, участие в экологических акциях, озеленение района и помощь нуждающимся.
+                    </p>
+                </div>
+
+                <!-- Направление 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-slate-200/60">
+                    <div class="w-12 h-12 rounded-xl bg-teal-100 text-secondary flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Профориентация и работа</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Помощь выпускникам с выбором профессии, информирование о госпрограммах «С дипломом в село» и молодежной практике.
+                    </p>
+                </div>
+
+                <!-- Направление 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition border border-slate-200/60">
+                    <div class="w-12 h-12 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-xl font-bold mb-6">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-3">Правовая грамотность</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Проведение разъяснительных встреч, профилактика правонарушений, борьба с кибермошенничеством и лудоманией.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Социальные сети и Instagram блок -->
+    <section class="py-16 bg-gradient-to-r from-pink-500 via-purple-600 to-indigo-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-4">Следите за нашими новостями в Instagram</h2>
+            <p class="text-pink-100 max-w-2xl mx-auto mb-8">
+                Все анонсы мероприятий, фотоотчеты, вакансии и свежие новости МРЦ Кызылжарского района публикуются на нашей официальной странице.
+            </p>
+            <a href="https://instagram.com/mrc_kyzylzhar" target="_blank" rel="noopener noreferrer" 
+               class="inline-flex items-center space-x-3 bg-white text-slate-900 font-bold px-8 py-4 rounded-full shadow-lg hover:bg-slate-100 transition transform hover:-translate-y-0.5">
+                <i class="fab fa-instagram text-2xl text-pink-600"></i>
+                <span>Перейти в @mrc_kyzylzhar</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section id="contacts" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <span class="text-primary font-bold uppercase tracking-wider text-sm">Свяжитесь с нами</span>
+                    <h2 class="text-3xl font-bold text-slate-900 mt-2 mb-6">Контакты и адрес</h2>
+                    <p class="text-slate-600 mb-8">
+                        Есть идея, проект или хотите стать частью нашей команды? Напишите нам или приходите в наш офис!
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-sky-100 text-primary flex items-center justify-center shrink-0 mt-1">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Адрес:</h4>
+                                <p class="text-slate-600">Казахстан, СКО, Кызылжарский район, с. Бесколь</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-sky-100 text-primary flex items-center justify-center shrink-0 mt-1">
+                                <i class="fab fa-instagram"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900">Instagram:</h4>
+                                <a href="https://instagram.com/mrc_kyzylzhar" target="_blank" class="text-primary hover:underline">@mrc_kyzylzhar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Форма обратной связи -->
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
+                    <h3 class="text-xl font-bold text-slate-900 mb-4">Написать нам</h3>
+                    <form onsubmit="event.preventDefault(); alert('Спасибо за сообщение! Мы свяжемся с вами.');" class="space-y-4">
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-1">Ваше имя</label>
+                            <input type="text" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-primary focus:outline-none bg-white">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-1">Телефон / WhatsApp</label>
+                            <input type="tel" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-primary focus:outline-none bg-white">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-slate-700 mb-1">Сообщение или идея</label>
+                            <textarea rows="4" required class="w-full px-4 py-2.5 rounded-lg border border-slate-300 focus:ring-2 focus:ring-primary focus:outline-none bg-white"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary hover:bg-sky-600 text-white font-bold py-3 rounded-lg transition shadow-md">
+                            Отправить обращение
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="bg-slate-900 text-slate-400 py-8 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm">
+            <p>© КГУ «Молодёжный ресурсный центр Кызылжарского района». Все права защищены.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
